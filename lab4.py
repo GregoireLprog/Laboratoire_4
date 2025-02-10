@@ -22,7 +22,7 @@ try:
 except ValueError: # si l'utilisateur entre autre chose qu'un nombre
     print("Veuillez entrer un nombre valide.")
     exit()
-# Utiliser un opérateur logique pour vérifier les conditions
+ 
 if input1 > input2 and input1 > input3: # si 1 est plus grand que 2 et 3
     result = f"Le premier nombre {input1} est le plus grand."
 elif input2 > input1 and input2 > input3: # si 2 est plus grand que 1 et 3
@@ -33,6 +33,10 @@ if input1 == input2 and input2 == input3: # si les 3 nombres sont égaux
     result = "Les trois nombres sont égaux, prépare toi."
 print(result)
 input4 = str(input("Voulez vous jouer a roche papier sciscaux? (oui/non) : "))
+while input4 != "oui" and input4 != "non": # si l'utilisateur entre autre chose que oui ou non
+    print("Veuillez entrer une réponse valide.")
+    input4 = str(input("Voulez vous jouer a roche papier sciscaux? (oui/non) : "))
+
 if input4 == "non": # si l'utilisateur choisi non, le programme se ferme
     print("Au revoir!")
     exit()
