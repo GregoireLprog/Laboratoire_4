@@ -12,7 +12,10 @@
 
 
 import random # dit a l'ordi de choisir une valeur au hasard q'on vas définir
-
+liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] # liste de 1 a 10
+for nombre in liste:
+     if nombre % 2 == 0: # si le nombre est pair
+        print(f"{nombre} est pair.") # affiche le nombre est pair
 print("inscrivez 3 nombres")
 # Demander trois entrées utilisateur
 try:
