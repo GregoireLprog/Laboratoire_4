@@ -12,16 +12,21 @@
 
 
 import random # dit a l'ordi de choisir une valeur au hasard q'on vas définir
-liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] # liste de 1 a 10
-for nombre in liste:
-     if nombre % 2 == 0: # si le nombre est pair
-        print(f"{nombre} est pair.") # affiche le nombre est pair
+
+
 print("inscrivez 3 nombres")
 # Demander trois entrées utilisateur
 try:
-    input1 = float(input("Entrez le premier nombre : "))
-    input2 = float(input("Entrez le deuxième nombre : "))
-    input3 = float(input("Entrez le troisième nombre : "))
+    input1 = int(input("Entrez le premier nombre : "))
+    input2 = int(input("Entrez le deuxième nombre : "))
+    input3 = int(input("Entrez le troisième nombre : "))
+
+    inputs = [input1, input2, input3]
+    for i, num in enumerate(inputs, start=1):
+        if num % 2 == 0:
+            print(f"Le nombre {i} ({num}) est pair.")
+        else:
+            print(f"Le nombre {i} ({num}) est impair.")
 except ValueError: # si l'utilisateur entre autre chose qu'un nombre
     print("Veuillez entrer un nombre valide.")
     exit()
@@ -39,9 +44,8 @@ input4 = str(input("Voulez vous jouer a roche papier sciscaux? (oui/non) : "))
 while input4 != "oui" and input4 != "non": # si l'utilisateur entre autre chose que oui ou non
     print("Veuillez entrer une réponse valide.")
     input4 = str(input("Voulez vous jouer a roche papier sciscaux? (oui/non) : "))
-
-if input4 == "non": # si l'utilisateur choisi non, le programme se ferme
-    print("Au revoir!")
+    if input4 == "non": # si l'utilisateur choisi non, le programme se ferme
+        print("Au revoir!")
     exit()
 if input4 == "oui": # si "oui" est entré, le programme continue
     print("Choisissez entre roche, papier ou ciseaux.") # roche papier ciseaux classique, (une partie)
