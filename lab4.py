@@ -30,9 +30,6 @@ except ValueError: # si l'utilisateur entre autre chose qu'un nombre
     print("Veuillez entrer un nombre valide.")
     exit()
 
-while input == input:
-    print ("vous entrer des nombre valide")
-    break
 if input1 == input2 == input3: # si les trois nombres sont égaux
     print("Les trois nombres sont égaux.")
 elif input1 == input2: # si le premier et le deuxième nombre sont égaux
@@ -71,7 +68,7 @@ user_choice = input("Choose roche, papier, or ciseaux:") # demande a l'utilisate
 
 while user_choice not in options: # si l'utilisateur entre autre chose que roche, papier ou ciseaux
     print("Vous devez choisir entre roche, papier ou ciseaux.")
-    user_choice = input("Choose roche, papier, or ciseaux:")
+    user_choice = input("Choisir entre roche, papier, or ciseaux:")
     continue 
 computer_choice = random.choice(options)
 print("You chose: ", user_choice) # affiche ce que l'utilisateur a choisi
