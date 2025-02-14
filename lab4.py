@@ -17,10 +17,12 @@ for i in range(0,10):
     print(i)
     if i == 10:
         break # arrête la boucle si i = 10
+    else:
+        continue # continue la boucle si i != 10
 
-while i < 10:
-    print ("moin grand que 10")
-    continue # continue la boucle si i < 10
+while True:
+    print("Je suis une boucle infinie")
+    break # arrête la boucle
 
 print("inscrivez 3 nombres")
 # Demander trois entrées utilisateur
@@ -48,9 +50,9 @@ else:
 if input1 == input2 and input2 == input3: # si les 3 nombres sont égaux
     result = "Les trois nombres sont égaux, prépare toi."
 print(result)
-input4 = str(input("Voulez vous jouer a roche papier sciscaux? (oui/non) : "))
-while input4 != "oui" and input4 != "non": # si l'utilisateur entre autre chose que oui ou non
-    print("Veuillez entrer une réponse valide.")
+input4 = str(input("Voulez vous jouer a roche papier sciscaux? (oui/non) : ")) # demande a l'utilisateur s'il veut jouer
+while input4 != "oui": # si l'utilisateur entre autre chose que oui ou non
+    print("Vous devez jouer.")
     input4 = str(input("Voulez vous jouer a roche papier sciscaux? (oui/non) : "))
     if input4 == "non": # si l'utilisateur choisi non, le programme se ferme
         print("Au revoir!")
