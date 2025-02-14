@@ -63,6 +63,10 @@ options = ["roche", "papier", "ciseaux"] # répertoire des choix possibles de l'
 
 
 user_choice = input("Choose roche, papier, or ciseaux:") # demande a l'utilisateur de choisir
+while user_choice not in options: # si l'utilisateur entre autre chose que roche, papier ou ciseaux
+    print("Vous devez choisir entre roche, papier ou ciseaux.")
+    user_choice = input("Choose roche, papier, or ciseaux:")
+    continue 
 computer_choice = random.choice(options)
 print("You chose: ", user_choice) # affiche ce que l'utilisateur a choisi
 print("Computer chose: ", computer_choice) # affiche ce que l'ordinateur a choisi
@@ -78,5 +82,4 @@ elif user_choice == "ciseaux" and computer_choice == "papier": #  ciseaux bat pa
 else: # si contraire, ordi gagne
         print("Computer wins!")
         print("Merci d'avoir joué!")
-
 # fin du programme
