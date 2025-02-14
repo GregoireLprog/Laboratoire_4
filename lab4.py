@@ -31,16 +31,16 @@ except ValueError: # si l'utilisateur entre autre chose qu'un nombre
     exit()
 
 
+while input1 == input2 == input3: # si les trois nombres sont égaux
+    print("Les trois nombres sont égaux.")
+    break
 
-if input1 > input2 and input1 > input3: # si 1 est plus grand que 2 et 3
-    result = f"Le premier nombre {input1} est le plus grand."
-elif input2 > input1 and input2 > input3: # si 2 est plus grand que 1 et 3
-    result = f"Le deuxième nombre {input2} est le plus grand."
-else:
-    result = f"Le troisième nombre {input3} est le plus grand." # si 3 est le plus grand 
-if input1 == input2 and input2 == input3: # si les 3 nombres sont égaux
-    result = "Les trois nombres sont égaux, prépare toi."
-print(result)
+if input1 == max(inputs): # si le premier nombre est le plus grand
+    print(f"Le premier nombre ({input1}) est le plus grand.")
+elif input2 == max(inputs): # si le deuxième nombre est le plus grand
+    print(f"Le deuxième nombre ({input2}) est le plus grand.")
+else: # si le troisième nombre est le plus grand
+    print(f"Le troisième nombre ({input3}) est le plus grand.")
 
 
 input4 = str(input("Voulez vous jouer a roche papier sciscaux? (oui/non) : ")) # demande a l'utilisateur s'il veut jouer
@@ -50,7 +50,7 @@ while input4 != "oui": # si l'utilisateur entre autre chose que oui ou non
     print("Vous devez jouer.")
     input4 = str(input("Voulez vous jouer a roche papier sciscaux? (oui/non) : "))
     if input4 == "non": # si l'utilisateur choisi non, le programme se ferme
-        print("Au revoir!")
+        print("Ok, au revoir!")
     exit()
 
 
