@@ -38,14 +38,12 @@ elif input1 == input3: # si le premier et le troisième nombre sont égaux
     print("Le premier et le troisième nombre sont égaux.")
 elif input2 == input3: # si le deuxième et le troisième nombre sont égaux
     print("Le deuxième et le troisième nombre sont égaux.")
-while input == input:# si les entré utilisateur son égal, fin du programme
-    print ("relancer")
-    exit()
 
-    if input1 == max(inputs): # si le premier nombre est le plus grand
-        print(f"Le premier nombre ({input1}) est le plus grand.")
-    elif input2 == max(inputs): # si le deuxième nombre est le plus grand
-        print(f"Le deuxième nombre ({input2}) est le plus grand.")
+
+if input1 == max(inputs): # si le premier nombre est le plus grand
+    print(f"Le premier nombre ({input1}) est le plus grand.")
+elif input2 == max(inputs): # si le deuxième nombre est le plus grand
+    print(f"Le deuxième nombre ({input2}) est le plus grand.")
 else: # si le troisième nombre est le plus grand
     print(f"Le troisième nombre ({input3}) est le plus grand.")
 
