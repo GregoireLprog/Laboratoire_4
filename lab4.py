@@ -13,6 +13,14 @@
 
 import random # dit a l'ordi de choisir une valeur au hasard q'on vas définir
 
+for i in range(0,10):
+    print(i)
+    if i == 10:
+        break # arrête la boucle si i = 10
+
+while i < 10:
+    print ("moin grand que 10")
+    continue # continue la boucle si i < 10
 
 print("inscrivez 3 nombres")
 # Demander trois entrées utilisateur
