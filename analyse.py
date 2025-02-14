@@ -2,4 +2,5 @@
 les règles de programme sont respecter.
 Il y a beaucoup de (elif) dans le roche papier ciseaux, il doit y avoir moyen de rendre cela plus simple avec moin de (elif) 
 on pourrais ajouter des messages d'erreurs pour les entrées utilisateur, pour les guider. Ex: au roche, papier, ciseaux, si
-l'utilisateur entre quelque chose qui na aucun sens, le programme pourrais lui dire d'entrer autre chose"""
+l'utilisateur entre quelque chose qui na aucun sens, le programme pourrais lui dire d'entrer autre chose
+au début, si l'entré est invalide, le programme arrete, il faudrait mettre quelque chose pour que l'utilisateur puisse réessayer"""
