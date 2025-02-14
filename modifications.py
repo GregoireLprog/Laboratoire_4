@@ -2,5 +2,6 @@
 demander d'entrer une réponse valide.
 Affiche que la boucle infinie est terminée.
 Ajout d'espace entre les blocs pour plus de clarté.
-
+Optimisation(selon moi) changement d'un bloc de condition pour déterminer qu'elle nombre est le plus grand
+ajout d'un bloc pour au cas où des nombres dans les trois nombres son égaux
 """

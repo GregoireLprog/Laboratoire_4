@@ -31,9 +31,14 @@ except ValueError: # si l'utilisateur entre autre chose qu'un nombre
     exit()
 
 
-while input1 == input2 == input3: # si les trois nombres sont égaux
+if input1 == input2 == input3: # si les trois nombres sont égaux
     print("Les trois nombres sont égaux.")
-    break
+elif input1 == input2: # si le premier et le deuxième nombre sont égaux
+    print("Le premier et le deuxième nombre sont égaux.")
+elif input1 == input3: # si le premier et le troisième nombre sont égaux
+    print("Le premier et le troisième nombre sont égaux.")
+elif input2 == input3: # si le deuxième et le troisième nombre sont égaux
+    print("Le deuxième et le troisième nombre sont égaux.")
 
 if input1 == max(inputs): # si le premier nombre est le plus grand
     print(f"Le premier nombre ({input1}) est le plus grand.")
